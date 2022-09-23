@@ -1,12 +1,11 @@
-sheeps_and_wolf=input()
+sheeps_and_wolf="GolDeNSanDyWateRyBeaChSuNN"
+sheeps_and_wolf=sheeps_and_wolf.lower()
+list_sheep=[]
 
-list_sheep=list(sheeps_and_wolf.split(", "))  # convert string to a list
-list_sheep.reverse()
-wolf=list_sheep.index("wolf",0, len(list_sheep))
+if "sand" or "sun" or"fish" or "water" in sheeps_and_wolf:
+    list_sheep=list(sheeps_and_wolf.split("sun", "wateraa"))  # convert string to a list
 
-if wolf!=0:
-    print(f"Oi! Sheep number {wolf}! You are about to be eaten by a wolf!")
-else:
-    print("Please go away and stop eating my sheep")
 
+# wolf=list_sheep.index("wolf",0, len(list_sheep))
+print(list_sheep)
 

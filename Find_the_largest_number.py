@@ -1,13 +1,10 @@
-#  You will be given a number. Print the largest number that can be formed from the digits of the given number.
+input=int(input())
+
+for a in range(1,input+1):
 
 
-input_number = input()
+    if str(a)[0]+str(a)[1]=="5":
 
-list_with_numbers = []
-for a in input_number:
-    list_with_numbers.append(a)
-# for i in range(len(list_with_numbers)):
-# list_with_numbers[i]=int(list_with_numbers[i]) # convert list with strings in integer numbers
-list_with_numbers.sort(reverse=True)  # gives descending order of the list
-for b in list_with_numbers:
-    print(b, end="")
+        print(f"{a}->True")
+    else:
+        print(f"{a}->False")
